@@ -1,0 +1,184 @@
+<?php
+###############################################################
+##Nuke  Ladder - XTS
+##Homepage::http://www.aodhome.com
+##Copyright:: Shane Andrusiak 2000-2006 Kris Sherrerd 2008-2010
+##Version 2.6.4
+###############################################################
+if (!defined('X1plugin_include'))exit();
+###############################################################
+
+/*#############################
+Function: sendinvite
+Needs:N/A
+Returns: N/A
+What does it do: Sets up and calles the functions to send an invite to join a team
+#############################*/
+function sendinvite() {
+	$user_id=DispFunc::X1Clean($_POST['user_id']);
+	$team_id=DispFunc::X1Clean($_POST['team_id']);
+	if(!X1Cookie::CheckLogin(X1_cookiename)){
+		return DispFunc::X1PluginOutput($c .= DispFunc::X1PluginTitle(XL_notlogggedin));
+	}
+  
+	list ($cookieteamid, $team) = X1Cookie::CookieRead(X1_cookiename);
+  $randid = X1Misc::X1PluginRandid();
+	if($cookieteamid!=$team_id){
+		return Dispfunc::XiPluginOutput(displayteam("invites",XL_teamreport_blankname));
+	}
+	    
+	if (GetTotalCountOf("team_id",X1_DB_teamroster," WHERE team_id=".$cookieteamid) >= X1_maxjoin){
+		return DispFunc::X1PluginOutput($c .= displayteam("invites", XL_teaminvites_limit));
+	}
+	if(SqlGetRow("uid",X1_DB_teamroster," WHERE uid =".$user_id." AND team_id =".MakeItemString(DispFunc::X1Clean($cookieteamid)) )){
+		return DispFunc::X1PluginOutput(displayteam("invites", XL_teaminvites_allreadyonroster));
+	}
+	
+		$row = SqlGetRowPre(X1_DB_usersemailkey,X1_userprefix.X1_DB_userstable," WHERE ".X1_DB_usersidkey."=".MakeItemString($user_id));
+    $email = $row[X1_DB_usersemailkey];
+		$teaminfo = SqlGetRow("name",X1_DB_teams," WHERE team_id = ".MakeItemString($cookieteamid));
+    $team = $teaminfo["name"];
+    
+	if(SqlGetRow("*",X1_DB_teaminvites," WHERE team_id = ".MakeItemString($cookieteamid)." AND uid = ".MakeItemString($user_id))){
+		return DispFunc::X1PluginOutput(displayteam("invites", XL_teaminvites_allreadyinvited));
+	}
+
+    if (X1_emailon){
+    	$content = array('team' =>  $team,
+                        'link' => X1_url.X1_urlx_path.X1_publicpostfile.X1_linkactionoperator."confirminvite",
+                        'date' => date("m/d/y"),
+                        'code' => $randid);
+        $c .= X1Misc::X1PluginEmail($email, "sendinvite.tpl", $content);
+    }
+    ModifySql("INSERT INTO", X1_DB_teaminvites, "(uid, team_id, randid)
+    VALUES (".MakeItemString($user_id).",
+	".MakeItemString($cookieteamid).",
+	".MakeItemString($randid).")");
+    return DispFunc::X1PluginOutput(displayteam("invites", XL_teaminvites_sent));
+}
+
+ /*############################################
+	name:confirminvite
+	what does it do: It gets the invite information, if there is none it creates the display to ask for the information.
+	If there was information, the information is parsed, and used appropraitely.
+	needs:N/A
+	returns:Returns a string.
+	###########################################*/
+function confirminvite() {
+	if(isset($_GET['code'])){
+    $confirm=Dispfunc::X1Clean($_GET['code']);
+    $str_confirm=str_split($confirm);
+    if($str_confirm[0]=='y'){
+    	$accept=1;
+    }
+    elseif($str_confirm[0]=='n'){
+    	$accept=2;
+    }
+  }
+  else{
+   	$accept=0;
+   	DispFunc::X1PluginOutput(XL_teaminvites_incorrect);
+  }
+
+		  
+  switch($accept){
+  	case 1:
+  		$c=AcceptInvite(implode('',str_replace('y','',$str_confirm)),$accept);//implode takes the array version of $str_confirm w/o the y and makes it a whole string.
+  		break;
+  	case 2:
+  		$c=AcceptInvite(implode('',str_replace('n','',$str_confirm)),$accept);
+			break;
+  	default:
+  		$c  = DispFunc::X1PluginStyle(); 
+			$c .= "<table class='".X1plugin_mapslist."' width='100%'>
+		    	<thead class='".X1plugin_tablehead."'>
+					<tr>
+		            	<td>".XL_teaminvites_enterid."</td>
+		        	</tr>
+		        </thead>
+		    <tbody class='".X1plugin_tablebody."'>
+		        <tr>
+		        	<td>
+		            	<form method='post' action='".X1_publicpostfile."' style='".X1_formstyle."'>
+		                	<input type='text' name='code' value=''>
+		                    <select name='".X1_actionoperator."'>
+		                    <option value='acceptinvite'>".XL_teaminvites_accept."</option>
+		                    <option value='acceptinvite'>".XL_teaminvites_decline."</option>
+		                    </select>
+		                    <input type='Submit' name='Submit' value='".XL_ok."' >
+			    		</form>
+		        	</td>
+		        </tr>
+		    ".DispFunc::DisplaySpecialFooter(1,false);
+			break;
+	}
+    return DispFunc::X1PluginOutput($c);
+}
+
+ /*############################################
+	name:AcceptInvite
+	what does it do:Sees if the invite is valid, if yes and they accept it sets up the info needed to add a member, if declined it does nothing
+	If the invite is invalid it says so, and sets up the remove invite.
+	needs:int $code, int $accept(=1)  (accepts only 1 or 2 otherwise error)
+	returns:Returns a string.
+	###########################################*/
+function AcceptInvite($code, $accept=1){
+	if($accept<=0 || $accept>=3){
+		UserLog(XL_failed_invite_ackn,$func="acceptinvite", $title="Major Error", ERROR_DIE);
+	}	
+	
+	$c = DispFunc::X1PluginStyle();
+
+  $invite = SqlGetRow("*",X1_DB_teaminvites," WHERE randid = ".MakeItemString($code));
+	if (!$invite){
+		UserLog(XL_teaminvites_none,$func="acceptinvite", $title="Major Error", ERROR_DISP);
+  }
+	else{
+		if($accept=1){//accepting
+			$invitation=1;
+			$c.=jointeam($invitation,$invite);
+  	}
+  	else{//Declining
+      $c .= DispFunc::X1PluginTitle(XL_teaminvites_declined);
+  	}
+  	RemoveInvite($code);
+  }
+	return $c;
+}
+
+ /*############################################
+	name:removeuserinvite
+	what does it do:Gets a invite code and attepts to remove the invite from the invite list at the request of the captain/co-captain.
+	needs:N/A
+	returns:Returns a string.
+	###########################################*/
+function removeuserinvite() {
+    $c  = DispFunc::X1PluginStyle();
+    if(!X1Cookie::CheckLogin(X1_cookiename)){
+    	return DispFunc::X1PluginOutput($c .= DispFunc::X1PluginTitle(XL_notlogggedin));
+	}
+   	if(RemoveInvite(DispFunc::X1Clean($_POST['randid']))){
+   		$result=XL_teaminvites_removed;
+   	}
+   	else{
+   		$result=XL_teaminvites_none;
+   	}
+   	return DispFunc::X1PluginOutput(displayteam("invites", $result));
+    	
+}
+
+ /*############################################
+	name:RemoveInvite
+	what does it do:Get a code and attepts to remove the invite from the invite list.
+	needs:int $invite_id
+	returns:boolean true on successful removal, Boolean false and an error message on fail.
+	###########################################*/
+function RemoveInvite($invite_id){
+	if(!ModifySql("Delete from",X1_DB_teaminvites,"where randid=".MakeItemString($invite_id))){
+		UserLog(XL_failed_invite_rm." $invite_id",$func="removeinvite", $title="Minor Error", ERROR_DISP);
+		return false;
+	}
+	return true;
+	
+}
+?>

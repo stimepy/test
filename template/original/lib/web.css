@@ -1,0 +1,319 @@
+/**
+ * Copyright (c) 2008 ClanTemplates.com
+ * TEMPLATENAME; a free template by Asherz at ClanTemplates.com
+ * No part of this file may be redistributed without written permission
+ * Designed by Asherz <email@clantemplates.com>
+ * Coded by Ross <ross@clantemplates.com>
+ * http://www.clantemplates.com/pages/Legal
+ */
+
+/**
+ * Imports
+ */
+@import url('./css-reset.css');
+
+/**
+ * Body
+ */
+body {
+	background: #181818;
+	font-family: Tahoma, Verdana, Arial, Helvetica, Sans-serif;
+	font-size: 0.69em;
+	color: #575757;
+	text-align: center;
+}
+
+/**
+ * Page structure
+ */
+#head-container {
+	background: url('../images/background.jpg') repeat-y top center;
+	width: 100%;
+	/*width: 888px;*/
+}
+
+
+
+#header {
+	clear: both;
+	margin-top: 2px;
+}
+
+#column-container {
+	clear: both;
+}
+
+#left-column {
+/*width:50%;*/
+	float: left;
+	margin-left: 5px;
+	/*width: 292px;*/
+}
+
+#right-column {
+	float: right;
+	margin-right: 5px;
+	/*width: 588px;*/
+}
+
+#fullcolumn{
+	float: left
+	width: 100%
+}
+
+#footer {
+	background: url('../images/footer_bg.jpg') repeat-x;
+	clear: both;
+	height: 25px;
+	text-align: center;
+}
+
+/**
+ * Navigation
+ */
+#navigation {
+	background: url('../images/nav_normal_bg.JPG') repeat-x;
+    margin-left: auto;
+    margin-right: auto;
+	height: 50px;
+	/* nav_normal.jpg*/
+}
+
+	#navigation li {
+		text-align: center;
+        float: left;
+		height: 66px;
+	}
+	
+	#navigation a {
+		display: block;
+		height: 66px;
+		overflow: hidden;
+	}
+	
+		/**
+		 * Rollover Control
+		 */
+		#navigation a img {
+			display: none;
+		}
+		
+		#navigation a:hover img {
+			display: block;
+		}
+	
+	/**
+	 * Nav items
+	 */
+	#nav_news {
+		background: url('../images/nav/news.jpg') no-repeat;
+		width: 110px;
+	}
+	
+	#nav_forums {
+		background: url('../images/nav/forums.jpg') no-repeat;
+		width: 137px;
+	}
+	
+	#nav_server {
+		background: url('../images/nav/server.jpg') no-repeat;
+		width: 132px;
+	}
+	
+	#nav_rosters {
+		background: url('../images/nav/rosters.jpg') no-repeat;
+		width: 130px;
+	}
+	
+	#nav_media {
+		background: url('../images/nav/media.jpg') no-repeat;
+		width: 118px;
+	}
+	
+	#nav_join_us {
+		background: url('../images/nav/join_us.jpg') no-repeat;
+		width: 134px;
+	}
+	
+	#nav_event {
+		background: url('../images/nav/event.jpg') no-repeat;
+		width: 127px;
+	}
+	
+
+
+/**
+ * Boxes
+ */
+.box {
+	border: 1px solid #141414;
+}
+
+	.box h2 {
+		background: url('../images/head_bg.jpg') repeat-x;
+		border-bottom: 1px solid #141414;
+		height: 36px;
+		text-align: right;
+	}
+	
+		.box h2 strong {
+		 	background: url('../images/head_end.jpg') no-repeat;
+			display: block;
+		}
+	
+	.box .content {
+		background: #181818;
+		border: 1px solid #292929;
+	}
+
+/**
+ * Specific box settings
+ */
+
+/* Welcome/Introduction box */
+.welcome_box {
+	margin-right: 4px;
+	width: 292px;
+}
+
+/* Left/right column boxes */
+#left-column .box, #right-column .box {
+	margin: 2px 0 2px 0;
+}
+
+/**
+ * Roster/Team
+ */
+#team-members li {
+	float: left;
+	margin: 3px;
+}
+
+#team-members a {
+	border: 2px solid #181818;
+	display: block;
+	padding: 1px;
+}
+
+#team-members a:hover {
+	border: 2px solid #849a00;
+}
+
+#rosterData strong {
+	color: #849a00;
+	font-weight: normal;
+}
+
+/** 
+ * Latest news (bulleted)
+ */
+.latest-news li {
+	padding: 3px;
+}
+
+.latest-news h3 {
+	color: #849a00;
+	display: inline;
+}
+
+.latest-news cite {
+	color: #575757;
+	float: right;
+	font-style: normal;
+}
+
+	.latest-news cite a {
+		color: #575757;
+		font-weight: bold;
+	}
+	
+	.latest-news cite a:hover {
+		color: #a7a7a7;
+		font-weight: bold;
+	}
+
+.latest-news .tright a {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/**
+ * Text formatting
+ */
+.content h3, .content p {
+	margin: 15px 10px 15px 10px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+.tcenter {
+	text-align: center;
+}
+
+.tright {
+	text-align: right;
+}
+
+.content h3 {
+	color: #93b900;
+	font-weight: bold;
+}
+
+.content h3 cite {
+	color: #fff;
+	font-style: normal;
+	font-weight: normal;
+}
+
+	.content h3 cite a {
+		color: #fff;
+		font-weight: bold;
+	}
+	
+	.content h3 cite a:hover {
+		color: #c7c7c7;
+	}
+
+#right-column .content ol, #right-column .content ul {
+	margin-left: 20px;
+}
+
+#right-column .content ol {
+	list-style: decimal;
+}
+
+#right-column .content ul {
+	list-style: disc;
+}
+
+/**
+ * Hyperlinks
+ */
+a, a:visited {
+	color: #93b900;
+}
+
+a:hover, a:visited:hover {
+	color: #849a00;
+}
+
+a:active {
+	color: #b5db22;
+}
+
+/**
+ * Floats
+ */
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}

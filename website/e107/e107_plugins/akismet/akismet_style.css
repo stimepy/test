@@ -1,0 +1,146 @@
+UL.tabNavigation {
+    list-style: none;
+    margin: 0 10px 9px 40px;
+    padding: 0;
+    font: 16px 'Lucida Grande', Arial, Helvetica, sans-serif;
+}
+
+UL.tabNavigation LI {
+    display: inline;
+}
+
+UL.tabNavigation LI A {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    -moz-border-radius-topright: 6px;
+    -khtml-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -khtml-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+UL.tabNavigation LI A.selected, UL.tabNavigation LI A:hover {
+    -moz-border-radius-topright: 6px;
+    -khtml-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -khtml-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+    background-color: #fff;
+    color: #2C99CE;
+    padding: 10px;
+    cursor: pointer;
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+}
+
+UL.tabNavigation LI A:focus {
+    outline: 0;
+} .akis_button {
+    border: 1px solid #333;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+} .akis_button:hover {
+    border: 1px solid #fff;
+    background-color: #333;
+    color: #2C99CE;
+    padding: 10px;
+    cursor: pointer;
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+} #akis_wrap {
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #333;
+    padding-bottom: 30px;
+    margin: 20px;
+    width: 90%;
+    padding: 0 30px 30px 30px;
+} .akis_table_foot {
+    -moz-border-radius-bottomright: 6px;
+    -khtml-border-bottom-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -khtml-border-bottom-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    font: 14px 'Lucida Grande', Arial, Helvetica, sans-serif;
+} .akis_table_body {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    font: 14px 'Lucida Grande', Arial, Helvetica, sans-serif;
+} .akis_table {
+    -moz-border-radius-bottomright: 6px;
+    -khtml-border-bottom-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -khtml-border-bottom-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    font: 14px 'Lucida Grande', Arial, Helvetica, sans-serif;
+} .akismet_form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+} .akis_input {
+    width: 265px;
+    height: 20px;
+    padding: 5px;
+    font: 14px 'Lucida Grande', Arial, Helvetica, sans-serif;
+} .akis_select {
+    width: 280px;
+    height: 35px;
+    padding: 5px;
+    font: 14px 'Lucida Grande', Arial, Helvetica, sans-serif;
+} .akis_td textarea {
+    margin: 10px 0 10px 0;
+    width: 400px;
+    padding: 5px;
+    font: 14px 'Lucida Grande', Arial, Helvetica, sans-serif;
+} .akis_td_1 {
+    text-align: left;
+    padding: 5px;
+    height: 30px;
+    border-bottom: 1px dashed #666;
+    font: 14px 'Lucida Grande', Arial, Helvetica, sans-serif;
+} .akis_td {
+    text-align: center;
+    padding: 5px;
+    height: 30px;
+    border-bottom: 1px dashed #666;
+    font: 14px 'Lucida Grande', Arial, Helvetica, sans-serif;
+} .akis_textarea {
+width: 400px;
+font: 14px 'Lucida Grande', Arial, Helvetica, sans-serif;
+padding: 5px;
+height: 120px;
+margin: 10px;
+} .akis_info_text {
+outline:0pt;
+cursor: default;
+border:0;
+background:#fff;
+width: 400px;
+font: 14px 'Lucida Grande', Arial, Helvetica, sans-serif;
+padding: 5px;
+margin:0;
+}

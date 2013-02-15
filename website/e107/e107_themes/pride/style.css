@@ -1,0 +1,478 @@
+/* Core Classes */
+/*----------------------------------------------------------------------------*/
+@import url('./css-reset.css');
+
+/**
+ * Body
+ */
+body {
+	background: #181818;
+	font-family: Tahoma, Verdana, Arial, Helvetica, Sans-serif;
+	font-size: 0.69em;
+	color: #575757;
+	text-align: center;
+}
+/*header and menu */
+#head-container {
+	background: url('./images/background.jpg') repeat-y top center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+	width: 100%;
+    height:175px;
+}
+
+#navigation {
+	background: url('./images/nav_normal_bg.JPG') repeat-x top center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Elephant;
+	height: 38px; /*50*/
+	/* nav_normal.jpg*/
+}
+
+/**************************************/
+
+/*
+body {
+	background-color: #fff;
+}*/
+
+body, td {
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	color: #F2EBEB;
+}
+
+body, td, .indent, .defaulttext, .caption, .captiontext, .bodytable, .mediumtext,
+.forumheader, .forumheader2, .forumheader3, .forumheader4, .forumheader5, .fcaption, .finfobar {
+	font: normal 11px  arial, verdana, tahoma, sans-serif;
+}
+
+.smalltext, .smallblacktext, .tbox, .button, .button:hover, .nextprev, .helpbox {
+	font: normal 10px  arial, verdana, tahoma, arial, sans-serif;
+}
+
+a {
+	color: #15BAE8;
+}
+
+a:hover {
+	color: #F2F5F7;
+}
+
+img {	
+	border: 0px;
+}
+
+.linkspage_button{
+	border:0px;
+}
+
+form {
+	margin: 0px;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+    border-collapse: collapse;
+}
+
+.tbox {
+	border: #777 1px solid;
+}
+
+.indent {
+	border: #999 1px dashed;
+	padding: 5px;
+	margin: 5px;
+	background-color: #527510;/*679415;*/
+}
+
+.button {
+	border: 1px solid #A5ACB2;
+	background-image : url(images/button.png);
+}
+
+.button:hover {
+	background-image : url(images/buttonover.png);
+}
+
+.nextprev {
+	border: 0px;
+	text-align: center;
+	padding: 2px;
+	background-color: #252525;
+}
+
+.spacer{
+	padding: 5px 0px;
+}
+
+.fborder, .border{
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+.forumheader, .forumheader2, .forumheader3, .forumheader4, .fcaption, .finfobar {
+	padding: 5px;
+	background-color: #252525;
+	border-bottom: 1px solid #252525;
+}
+
+.forumheader, .forumheader4, .finfobar {
+	background-color: #252525;
+}
+
+.forumheader5 {
+	cursor: pointer;
+}
+
+.fcaption, .forumheader5 {
+	background-color: #252525;
+}
+
+.searchhighlight {
+	text-decoration: underline;
+	color: #ff0000;
+	font-weight: bold;
+}
+
+.helpbox {
+	border: 0px;
+}
+
+.news_image {
+	float: right;
+	padding: 0px 0px 7px 7px;
+}
+
+.logo {
+	 display: block;
+}
+
+
+/* Theme Specific Classes */
+/*----------------------------------------------------------------------------*/
+
+.container {
+	width: 755px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	border: 1px solid #78AD17;
+	/*border-bottom: 1px solid #78AD17;*/
+	margin-left: 0px;
+}  
+
+.top_section {
+	background-image: url(images/header.jpg);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.left_section {
+	vertical-align: top;
+	width: 160px;
+	border-right: 1px solid #126CA3;
+	background-color: #CCDCF9;
+}
+
+.top_bar {
+	background-color: #126CA3;
+	text-align: right;
+	padding-right: 5px;
+	width: 100%;
+	height: 23px;
+}
+
+.main_container {
+	vertical-align: top;
+	width: 83%;
+}
+
+.top_inner_container {
+	border-collapse: collapse;
+	border-spacing: 0px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.bottom_inner_container {
+	border-collapse: collapse;
+	border-spacing: 0px;
+	margin-bottom: 12px;
+	width: 100%;
+}
+
+.right_section {
+	border-left: 1px solid #126CA3;
+	text-align: center;
+	vertical-align: top;
+	width: 160px;
+}
+
+.main_nav {
+	padding-right: 5px;
+	vertical-align: top;
+}
+
+.menu_nav{
+    padding-right: 5px;
+    vertical-align: top;
+}
+
+.main_section {
+	vertical-align: top;
+	padding: 10px;
+}
+
+.main_caption {
+	font-weight: bold;
+	color: #78AD17;
+	margin-bottom: 7px;
+}
+
+.main_caption {
+	font-size: 13px;
+}
+
+.tablerender {
+	margin-bottom: 12px;
+}
+/*
+.top_left_menu_container {
+	border-collapse: collapse;
+	border-spacing: 0px;
+	width: 100%;
+}
+
+.top_left_menu {
+	background-color: #126CA3;
+	font-weight: bold;
+	padding: 12px 7px;
+	color: #fff;
+}
+
+.top_left_menu a {
+	color: #fff;
+}
+
+.top_left_menu a:hover {
+	color: #ddd;
+}
+
+.top_left_menu_caption {
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+
+.bottom_left_menu_area {
+	vertical-align: top;
+	padding-bottom: 10px;
+}
+ */
+
+/* menu  */
+.menu_caption2 {
+    background-image: url(images/headers/header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+    text-align: right;
+    font-weight: bold;
+    color: #78AD17;
+    /*margin-bottom: 7px;*/
+}
+
+.menu_container {
+    background: #181818;
+    border: 1px solid #292929;
+     /*width: 160px;
+	border-collapse: collapse;
+	border-spacing: 0px;*/
+}
+
+.menu_inner_container {
+	padding: 10px 7px;
+}
+
+.disclaimer {
+    text-align: center;
+	width: 100%;
+	padding: 12px 0px;
+}
+
+
+/* Theme Specific Classes: News Style */
+
+.news_info_top {
+	padding: 2px;
+}
+
+.news_info_bottom {
+	width: 100%;
+    background-color: #252525;
+    border-collapse: collapse;
+	border-spacing: 0px;
+	margin-bottom: 12px;
+}
+
+.news_info_bottom_left {
+	padding: 2px;
+}
+
+.news_info_bottom_middle {
+	padding: 2px;
+	width: 100%;
+}
+
+.news_info_bottom_right {
+	padding: 2px;
+	white-space: nowrap
+}
+
+.news_comments_icon {
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+
+
+/* Theme Specific Classes: Cube Logo Graphic */
+
+.cube_container {
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.cube_image {
+	position: absolute;
+	top: -76px;
+	left: -49px;
+	width: 96px;
+	height: 108px;
+	display: block;
+}
+
+
+/* Theme Specific Classes: Advanced Content Management Graphic */
+
+.advanced_image {
+	width: 145px;
+	height: 90px;
+	display: block;
+	margin-left: 14px;
+}
+
+.centered_top{
+    text-align: center;
+    vertical-align: top;
+}
+
+/*  {FS_SITELINKS} */
+/*----------------------------------------------------------------------------*/
+/* Drop down */
+.pridebar {
+    float:left;
+    text-align: center;
+    width:100%;
+    padding: 10;
+   /* background:#fff;
+    border-bottom:4px solid #000;*/
+    position:relative;
+}
+.pridebar ul {
+    clear:left;
+    float:right;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    right:50%;
+    text-align:center;
+}
+.pridebar ul li {
+    display:block;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    left:50%;
+}
+.pridebar ul li a {
+    display:block;
+    margin-top: 2px;
+    text-align: center;
+    background-image: url('./images/nav/nav_normal.jpg');/* should be image but not created yet*/
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-top:1px;
+    padding:12px 8px 8px 0px;
+    height: 20px;
+     /*color:#000;*/
+    text-decoration:none;
+    /*line-height:1.3em;*/
+}
+.pridebar ul li a:hover {
+    /*background:#369;
+    color:#fff;*/
+}
+
+
+.pridebar ul li:hover a{
+    /* background: #36f; /* Top menu items background colour */
+    /*color:#fff;
+    border-bottom:1px solid #03f;*/
+}
+
+/* Submenu items */
+.pridebar ul ul {
+    display:none; /* Sub menus are hiden by default */
+    position:absolute;
+    /*top:2em; */
+    left:0;
+    right:auto; /*resets the right:50% on the parent ul */
+    /*   width:10em; /* width of the drop-down menus */
+}
+.pridebar ul ul li {
+    left:auto;  /*resets the left:50% on the parent li */
+    margin:0; /* Reset the 1px margin from the top menu */
+    clear:left;
+    width:100%;
+}
+.pridebar ul ul li a,
+.pridebar ul li.active li a,
+.pridebar ul li:hover ul li a{
+    /*  font-size:0.8em;
+font-weight:normal; /* resets the bold set for the top level menu items */
+    padding-top: 10px;
+    background-image: url('images/nav/nav_normal.jpg');
+    background-repeat: no-repeat;
+    height: 14px;
+
+    /*color:#444;
+    line-height:1.4em; /* overwrite line-height value from top menu */
+    /* border-bottom:1px solid #ddd; /* sub menu item horizontal lines */
+}
+.pridebar ul ul li a:hover,
+.pridebar ul li.active ul li a:hover,
+.pridebar ul li:hover ul li a:hover{
+  /*  background:#36f; /* Sub menu items background colour */
+    /*color:#fff;*/
+}
+
+/* Flip the last submenu so it stays within the page */
+.pridebar ul ul.last {
+    left:auto; /* reset left:0; value */
+    right:0; /* Set right value instead */
+}
+
+/* Make the sub menus appear on hover */
+.pridebar ul li:hover ul{
+    display:block; /* Show the sub menus */
+}
+/*end drop down*/

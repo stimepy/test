@@ -1,0 +1,60 @@
+a.tab {
+	border-left:1px solid #A1BA25; border-right:1px solid #A1BA25; border-top:1px solid #A1BA25; border-bottom:1px none #A1BA25; background-image: url('../../templates/Saphic/images/cellpic2.gif'); 
+	border-collapse: collapse;
+	margin-top: 4px;
+	margin-right:2px;
+	font-family: arial;
+	text-decoration: none;
+	white-space:nowrap;
+	color:#FFFFFF; padding-left:1px; padding-right:1px; padding-top:2px; padding-bottom:2px
+}
+a.tab:hover {
+	border-left:1px solid #A1BA25; border-right:1px solid #A1BA25; border-top:1px solid #A1BA25; border-bottom:0px none #A1BA25; background-image: url('../../templates/Saphic/images/cellpic2.gif'); 
+	border-collapse: collapse;
+	text-decoration: none;
+	margin-right:2px;
+	white-space:nowrap; padding-left:1px; padding-right:1px; padding-top:2px; padding-bottom:2px
+}
+.panel { 
+	border: solid 0px #979797; 
+	padding: 0px; 
+	overflow:visible;
+	text-decoration: none;
+}
+td, th, p, li
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.tborder
+{
+	border: solid 1px #A1BA25;
+
+}
+.title{
+	background-image: url('../../templates/Saphic/images/cellpic1.gif'); 
+	
+}
+.thead
+{
+	color: #EEEEEE; 
+	font-size: 10px; 
+	font-weight : bold;
+	background-image: url('../../templates/Saphic/images/cellpic2.gif'); 
+	height: 25px
+}
+
+.tfoot
+{
+	color: #EEEEEE;
+	background-image: url('../../templates/Saphic/images/cellpic1.gif'); 
+}
+
+.alt1, .alt1Active
+{
+	background-color: #FFFFFF;
+}
+.alt2, .alt2Active
+{
+	background-color: #F7F7F7; 
+
+}

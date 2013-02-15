@@ -1,0 +1,1 @@
+<?phpinterface DatabaseTrans {	function SqlGetRow($select, $from, $where, $other);	function SqlGetAll($select, $from, $where, $other);		function SqlInsert($table, $values);		function SqlUpdate($table, $values, $where);		function SqlGetRowCount($select, $table, $where);		function getrows();		function LastInsertId();}?>

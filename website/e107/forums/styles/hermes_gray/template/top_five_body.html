@@ -1,0 +1,40 @@
+
+<span class="corners-top"><span></span></span>
+	{$CA_BLOCK_START}{$CA_CAP2_START}{$CA_CAP2_END}
+		<table class="tablebg" cellspacing="{$CA_SPACING}" id="top_five" style="width:100%">
+		<thead>
+		<tr>
+			<th style="width: 5%;"> </th>
+			<th style="width: 15%;">{L_FORMNAME}</th>
+			<th style="width: 60%;">{L_NEWEST_TOPICS}</th>
+			<th style="width: 5%;">{L_REP}</th>
+			<th style="width: 5%;">{L_VIEWS}</th>
+			<th style="width: 30%;">{L_LTPT}</th>
+		</tr>
+		</thead>
+		<tbody>
+			<!-- BEGIN top_five_topic --><tr class="bg2">
+				<td class="row1">
+					{top_five_topic.TOP_ICON}
+				</td>
+				<td class="row1">
+					<a href={top_five_topic.FORUM_URL}><b>{top_five_topic.F_NAME}</b></a>
+				</td>
+				<td class="row1">
+				<!-- IF top_five_topic.NO_TOPIC_TITLE-->{top_five_topic.NO_TOPIC_TITLE}<!-- ELSE -->
+				<a href="{top_five_topic.U_TOPIC}">{top_five_topic.TOPIC_TITLE}</a>
+				<!-- ENDIF -->
+				</td>
+				<td class="row1" text-align="center">
+					{top_five_topic.TOPIC_REP}
+				</td>
+				<td class="row1" text-align="center">
+					{top_five_topic.TOPIC_VIEW}
+				</td>
+				<td class="row1" colspan="2">
+					{top_five_topic.USERNAME_FULL}<br />{top_five_topic.LAST_TOPIC_TIME}
+				</td>
+			</tr><!-- END top_five_topic -->
+		</tbody>
+		</table>
+{$CA_BLOCK_END}

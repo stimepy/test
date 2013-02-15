@@ -1,0 +1,1 @@
+The Challenged by <? team ?> was withdrawn.

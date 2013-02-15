@@ -1,0 +1,1 @@
+The challenge to <? team1 ?> on <? event ?> has expired.

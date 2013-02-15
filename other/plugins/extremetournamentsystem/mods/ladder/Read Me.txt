@@ -1,0 +1,27 @@
+/*######################################################
+#Class: X1LadderMod  (Version 1.1.0)   
+#implements: X1Eventmods
+#What and why: This is the ladder event.  Ladder is defined as follows:
+Teams are put in to postions, each position is a "rung"   Teams can only challenge up the "rung".  Points won mean nothing, only position matters.  (there are no ties!)
+Winning a match means:
+If you were challenged: Nothing, you defended your spot on the ladder and will keep it as a reward.
+If you were challenger: You move up to the challenged teams spot.
+Losing a match means:
+If you were challenged: You will be knocked down either 1 spot (default) or as many spots as defined by the ladder admin.
+If you were challenger: Nothing, your stuck in your rung, moving neither up nor down.
+
+Compadability for XTS Version: 2.6.4
+######################################################*/
+
+Know issues: //In the form:Problem per Revision #.
+Bad names per Revison 1
+Fixed some database quiries. Revision 2.
+Fixed an issue with the recording of the points.  Revision 3.
+Fixed the Ladder rung logic  Revision 4
+
+
+Revisions: 
+1: Original creation.
+2: Sent to version 1.
+3: Set to 1.0.1
+4. Set to 1.1.0

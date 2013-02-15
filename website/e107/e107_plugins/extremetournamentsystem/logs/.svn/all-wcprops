@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svnroot/nuklad-xts/!svn/ver/1/Core/logs
+END
+system.log
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/nuklad-xts/!svn/ver/1/Core/logs/system.log
+END
+admin.log
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/nuklad-xts/!svn/ver/1/Core/logs/admin.log
+END
+user.log
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/nuklad-xts/!svn/ver/1/Core/logs/user.log
+END

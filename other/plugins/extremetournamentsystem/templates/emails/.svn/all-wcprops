@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/nuklad-xts/!svn/ver/123/Core/templates/emails
+END
+challengeaccept1.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/nuklad-xts/!svn/ver/51/Core/templates/emails/challengeaccept1.tpl
+END
+challengeaccept2.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/nuklad-xts/!svn/ver/51/Core/templates/emails/challengeaccept2.tpl
+END
+recievedloss.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/nuklad-xts/!svn/ver/51/Core/templates/emails/recievedloss.tpl
+END
+challengesend.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/nuklad-xts/!svn/ver/51/Core/templates/emails/challengesend.tpl
+END
+index.htm
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/nuklad-xts/!svn/ver/51/Core/templates/emails/index.htm
+END
+winmail.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/nuklad-xts/!svn/ver/51/Core/templates/emails/winmail.tpl
+END
+expire_challenged.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/nuklad-xts/!svn/ver/51/Core/templates/emails/expire_challenged.tpl
+END
+challengerecv.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/nuklad-xts/!svn/ver/51/Core/templates/emails/challengerecv.tpl
+END
+recievedwin.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/nuklad-xts/!svn/ver/51/Core/templates/emails/recievedwin.tpl
+END
+recieveddraw.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/nuklad-xts/!svn/ver/51/Core/templates/emails/recieveddraw.tpl
+END
+challengedecline.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/nuklad-xts/!svn/ver/51/Core/templates/emails/challengedecline.tpl
+END
+sendinvite.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/nuklad-xts/!svn/ver/54/Core/templates/emails/sendinvite.tpl
+END
+passreset.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/nuklad-xts/!svn/ver/51/Core/templates/emails/passreset.tpl
+END
+registration.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/nuklad-xts/!svn/ver/51/Core/templates/emails/registration.tpl
+END
+challengewith.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/nuklad-xts/!svn/ver/123/Core/templates/emails/challengewith.tpl
+END
+teamnotify.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/nuklad-xts/!svn/ver/51/Core/templates/emails/teamnotify.tpl
+END
+expire_challenger.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/nuklad-xts/!svn/ver/51/Core/templates/emails/expire_challenger.tpl
+END

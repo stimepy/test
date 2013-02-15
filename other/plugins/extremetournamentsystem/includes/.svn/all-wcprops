@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/nuklad-xts/!svn/ver/131/Core/includes
+END
+X1Moderator.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/nuklad-xts/!svn/ver/143/Core/includes/X1Moderator.class.php
+END
+X1File.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/nuklad-xts/!svn/ver/113/Core/includes/X1File.class.php
+END
+X1Log.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/nuklad-xts/!svn/ver/7/Core/includes/X1Log.class.php
+END
+DispFunc.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/nuklad-xts/!svn/ver/107/Core/includes/DispFunc.class.php
+END
+X1TeamUser.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/nuklad-xts/!svn/ver/113/Core/includes/X1TeamUser.class.php
+END
+X1Cookie.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/nuklad-xts/!svn/ver/123/Core/includes/X1Cookie.class.php
+END
+X1ChallengeMessenger.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/nuklad-xts/!svn/ver/143/Core/includes/X1ChallengeMessenger.class.php
+END
+X1Misc.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/nuklad-xts/!svn/ver/52/Core/includes/X1Misc.class.php
+END

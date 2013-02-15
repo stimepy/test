@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/nuklad-xts/!svn/ver/123/Core/core/user
+END
+user_match.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/nuklad-xts/!svn/ver/144/Core/core/user/user_match.php
+END
+user_disputes.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/nuklad-xts/!svn/ver/4/Core/core/user/user_disputes.php
+END
+user_challenges.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/nuklad-xts/!svn/ver/150/Core/core/user/user_challenges.php
+END
+user_jointeam.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/nuklad-xts/!svn/ver/82/Core/core/user/user_jointeam.php
+END
+user_index.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/nuklad-xts/!svn/ver/112/Core/core/user/user_index.php
+END
+user_teamprofile.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/nuklad-xts/!svn/ver/100/Core/core/user/user_teamprofile.php
+END
+user_functions.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/nuklad-xts/!svn/ver/3/Core/core/user/user_functions.php
+END
+user_teamcreate.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/nuklad-xts/!svn/ver/59/Core/core/user/user_teamcreate.php
+END
+index.htm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/nuklad-xts/!svn/ver/1/Core/core/user/index.htm
+END
+user_report.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/nuklad-xts/!svn/ver/150/Core/core/user/user_report.php
+END
+user_displayteam.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/nuklad-xts/!svn/ver/113/Core/core/user/user_displayteam.php
+END
+user_cookiechallenge.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/nuklad-xts/!svn/ver/1/Core/core/user/user_cookiechallenge.php
+END
+user_playerprofile.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/nuklad-xts/!svn/ver/110/Core/core/user/user_playerprofile.php
+END
+user_myteams.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/nuklad-xts/!svn/ver/113/Core/core/user/user_myteams.php
+END
+user_invites.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/nuklad-xts/!svn/ver/52/Core/core/user/user_invites.php
+END
+user_quitteam.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/nuklad-xts/!svn/ver/112/Core/core/user/user_quitteam.php
+END
+user_eventhome.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/nuklad-xts/!svn/ver/114/Core/core/user/user_eventhome.php
+END

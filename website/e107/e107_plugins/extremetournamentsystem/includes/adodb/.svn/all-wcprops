@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/nuklad-xts/!svn/ver/131/Core/includes/adodb
+END
+adodb-perf.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/nuklad-xts/!svn/ver/1/Core/includes/adodb/adodb-perf.inc.php
+END
+adodb-datadict.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/nuklad-xts/!svn/ver/1/Core/includes/adodb/adodb-datadict.inc.php
+END
+adodb-time.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/nuklad-xts/!svn/ver/1/Core/includes/adodb/adodb-time.inc.php
+END
+adodb.config.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/nuklad-xts/!svn/ver/1/Core/includes/adodb/adodb.config.php
+END
+adodb-perf-module.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/nuklad-xts/!svn/ver/1/Core/includes/adodb/adodb-perf-module.inc.php
+END
+tohtml.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/nuklad-xts/!svn/ver/1/Core/includes/adodb/tohtml.inc.php
+END
+adodb-exceptions.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/nuklad-xts/!svn/ver/1/Core/includes/adodb/adodb-exceptions.inc.php
+END
+adodb-xmlschema.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/nuklad-xts/!svn/ver/1/Core/includes/adodb/adodb-xmlschema.inc.php
+END
+adodb-errorpear.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/nuklad-xts/!svn/ver/1/Core/includes/adodb/adodb-errorpear.inc.php
+END
+adodb.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/nuklad-xts/!svn/ver/131/Core/includes/adodb/adodb.inc.php
+END
+xmlschema.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/nuklad-xts/!svn/ver/1/Core/includes/adodb/xmlschema.dtd
+END
+adodb-errorhandler.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/nuklad-xts/!svn/ver/1/Core/includes/adodb/adodb-errorhandler.inc.php
+END
+adodb-error.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/nuklad-xts/!svn/ver/1/Core/includes/adodb/adodb-error.inc.php
+END

@@ -1,0 +1,236 @@
+/* General proSilver Markup Styles
+---------------------------------------- */
+
+.phpbb-style * {
+	/* Reset browsers default margin, padding and font sizes */
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.phpbb-style h1 {
+	/* Forum name */
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-right: 200px;
+	color: #FFFFFF;
+	margin-top: 15px;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.phpbb-style p {
+	line-height: 1.3em;
+	font-size: 1.1em;
+	margin-bottom: 1.5em;
+}
+
+.phpbb-style img {
+	border-width: 0;
+}
+
+/* Main blocks
+---------------------------------------- */
+
+#theme-logo {
+	float: left;
+	width: auto;
+	padding: 10px 13px 0 10px;
+}
+
+a#theme-logo:hover {
+	text-decoration: none;
+}
+
+/* Site description and logo */
+#theme-site-description {
+	float: left;
+	width: 100%;
+}
+
+#theme-site-description h1 {
+	margin-right: 0;
+}
+
+/* Round cornered boxes and backgrounds
+---------------------------------------- */
+.theme-headerbar {
+	background: #ebebeb none repeat-x 0 0;
+	color: #FFFFFF;
+	margin-bottom: 4px;
+	padding: 0 5px;
+}
+span.theme-corners-top, span.theme-corners-bottom, span.theme-corners-top span, span.theme-corners-bottom span {
+	font-size: 1px;
+	line-height: 1px;
+	display: block;
+	height: 5px;
+	background-repeat: no-repeat;
+}
+
+span.theme-corners-top {
+	background-image: none;
+	background-position: 0 0;
+	margin: 0 -5px;
+}
+
+span.theme-corners-top span {
+	background-image: none;
+	background-position: 100% 0;
+}
+
+span.theme-corners-bottom {
+	background-image: none;
+	background-position: 0 100%;
+	margin: 0 -5px;
+	clear: both;
+}
+
+span.theme-corners-bottom span {
+	background-image: none;
+	background-position: 100% 100%;
+}
+
+.theme-headbg span.theme-corners-bottom {
+	margin-bottom: -1px;
+}
+
+.theme-post span.theme-corners-top, .theme-post span.theme-corners-bottom, .theme-panel span.theme-corners-top, .theme-panel span.theme-corners-bottom, .theme-navbar span.theme-corners-top, .theme-navbar span.theme-corners-bottom {
+	margin: 0 -10px;
+}
+
+.theme-rules span.theme-corners-top {
+	margin: 0 -10px 5px -10px;
+}
+
+.theme-rules span.theme-corners-bottom {
+	margin: 5px -10px 0 -10px;
+}
+
+/* proSilver Link Styles
+---------------------------------------- */
+
+/* Fix for e107 Links */
+#theme-wrap a:link	{ color: #898989; text-decoration: none; }
+#theme-wrap a:visited	{ color: #898989; text-decoration: none; }
+#theme-wrap a:hover	{ color: #d3d3d3; text-decoration: underline; }
+#theme-wrap a:active	{ color: #d2d2d2; text-decoration: none; }
+ 
+/*  	
+--------------------------------------------------------------
+Colours and backgrounds for common.css
+-------------------------------------------------------------- */
+
+h1 {
+	color: #FFFFFF;
+}
+
+
+/* Round cornered boxes and backgrounds
+---------------------------------------- */
+.theme-headerbar {
+	background-color: #12A3EB;
+	background-image: url("images/bg_header.gif");
+	color: #FFFFFF;
+}
+
+span.theme-corners-top {
+	background-image: url("images/corners_left.png");
+}
+
+span.theme-corners-top span {
+	background-image: url("images/corners_right.png");
+}
+
+span.theme-corners-bottom {
+	background-image: url("images/corners_left.png");
+}
+
+span.theme-corners-bottom span {
+	background-image: url("images/corners_right.png");
+}
+
+
+/* proSilver Style Sheet Tweaks
+
+These style definitions are mainly IE specific 
+tweaks required due to its poor CSS support.
+-------------------------------------------------*/
+
+* html table, * html select, * html input { font-size: 100%; }
+* html hr { margin: 0; }
+* html span.theme-corners-top, * html span.theme-corners-bottom { background-image: url("images/corners_left.gif"); }
+* html span.theme-corners-top span, * html span.theme-corners-bottom span { background-image: url("images/corners_right.gif"); }
+
+table.theme-table1 {
+	width: 99%;		/* IE < 6 browsers */
+	/* Tantek hack */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 100%;
+}
+html>body table.theme-table1 { width: 100%; }	/* Reset 100% for opera */
+
+* html ul.theme-topiclist li { position: relative; }
+* html .theme-postbody h3 img { vertical-align: middle; }
+
+/* Form styles */
+html>body dd label input { vertical-align: text-bottom; }	/* Align checkboxes/radio buttons nicely */
+
+* html input.theme-button1, * html input.theme-button2 {
+	padding-bottom: 0;
+	margin-bottom: 1px;
+}
+
+/* Misc layout styles */
+* html .theme-column1, * html .theme-column2 { width: 45%; }
+
+/* Nice method for clearing floated blocks without having to insert any extra markup (like spacer above)
+   From http://www.positioniseverything.net/easyclearing.html 
+#theme-tabs:after, #theme-minitabs:after, .theme-post:after, .theme-navbar:after, fieldset dl:after, ul.theme-topiclist dl:after, ul.theme-linklist:after, dl.theme-polls:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}*/
+
+.clearfix, #theme-tabs, #theme-minitabs, fieldset dl, ul.theme-topiclist dl, dl.theme-polls {
+	height: 1%;
+	overflow: hidden;
+}
+
+/* viewtopic fix */
+* html .theme-post {
+	height: 25%;
+	overflow: hidden;
+}
+
+/* navbar fix */
+* html .theme-clearfix, * html .theme-navbar, ul.theme-linklist {
+	height: 4%;
+	overflow: hidden;
+}
+
+/* Simple fix so forum and topic lists always have a min-height set, even in IE6
+	From http://www.dustindiaz.com/min-height-fast-hack */
+dl.theme-icon {
+	min-height: 35px;
+	height: auto !important;
+	height: 35px;
+}
+
+* html #theme-search-box {
+	width: 25%;
+}
+
+/* Correctly clear floating for details on profile view */
+*:first-child+html dl.theme-details dd {
+	margin-left: 30%;
+	float: none;
+}
+
+* html dl.theme-details dd {
+	margin-left: 30%;
+	float: none;
+}

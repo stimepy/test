@@ -1,0 +1,26 @@
+[15-Oct-2009 16:01:48] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 209
+[15-Oct-2009 16:01:48] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #2 is not an array in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 209
+[15-Oct-2009 17:47:59] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 209
+[15-Oct-2009 17:47:59] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #2 is not an array in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 209
+[15-Oct-2009 22:27:51] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 209
+[15-Oct-2009 22:27:51] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #2 is not an array in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 209
+[15-Oct-2009 23:20:45] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 209
+[15-Oct-2009 23:20:45] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #2 is not an array in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 209
+[16-Oct-2009 00:08:41] PHP Warning:  Invalid argument supplied for foreach() in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 141
+[16-Oct-2009 00:10:30] PHP Warning:  Invalid argument supplied for foreach() in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 141
+[16-Oct-2009 00:11:21] PHP Warning:  Invalid argument supplied for foreach() in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 141
+[16-Oct-2009 00:11:28] PHP Warning:  Invalid argument supplied for foreach() in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 141
+[16-Oct-2009 00:11:47] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 209
+[16-Oct-2009 00:11:47] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #2 is not an array in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 209
+[16-Oct-2009 00:12:00] PHP Warning:  Invalid argument supplied for foreach() in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 141
+[16-Oct-2009 00:12:06] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 209
+[16-Oct-2009 00:12:06] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #2 is not an array in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 209
+[16-Oct-2009 00:12:11] PHP Warning:  Invalid argument supplied for foreach() in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 141
+[16-Oct-2009 00:12:35] PHP Warning:  Invalid argument supplied for foreach() in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 141
+[16-Oct-2009 00:12:56] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 209
+[16-Oct-2009 00:12:56] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #2 is not an array in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 209
+[16-Oct-2009 00:24:04] PHP Warning:  Invalid argument supplied for foreach() in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 141
+[21-Dec-2009 15:41:31] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 209
+[21-Dec-2009 15:41:31] PHP Warning:  array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #2 is not an array in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 209
+[20-Jan-2010 17:26:24] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 79
+[09-Nov-2011 18:32:34] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/stimepy/public_html/pride-gaming/home/template_functions.php on line 79

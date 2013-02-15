@@ -1,0 +1,18 @@
+/*######################################################
+#Class: X1LadderT2  (Version 1.0.0)   
+#implements: X1Eventmods
+#What and why: This is a TWL inspired ladder event.  Ladder is defined as follows:
+Teams are put in to postions, each position is a "rung"   Teams can only challenge up a % of the "rung".  Points won mean nothing, only positions matters.  (there are no ties!)
+Winning a match means:
+If you were challenged: Nothing, you defended your spot on the ladder and will keep it as a reward.
+If you were challenger: You move up to the challenged teams spot.
+Losing a match means:
+If you were challenged: You will be knocked down a to the winners rung + 1 (default) or as many spots as defined by the ladder admin.
+If you were challenger: Nothing, your stuck in your rung, moving neither up nor down.
+
+Compadability for XTS Version: 2.6.4
+######################################################*/
+
+Revisions: 
+1: Original creation.
+2: Sent to version 1.

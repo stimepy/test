@@ -1,0 +1,19 @@
+/**************************
+File-name: Stylesheet.css
+Created: 01/01/12
+Version: 0
+***************************/
+
+body {
+    background: url('./images/Pride-Gaming_Zombie-Banner.jpg') no-repeat;
+    font-family: Tahoma, Verdana, Arial, Helvetica, Sans-serif;
+    font-size: 0.69em;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+td{
+    padding-top: 50%;
+    color: #ffffff;
+}

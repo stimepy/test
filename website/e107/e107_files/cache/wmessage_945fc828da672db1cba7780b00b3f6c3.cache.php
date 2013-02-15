@@ -1,0 +1,1 @@
+<?phphi <div style='text-align:center'><img src='http://not-localhost/e107_xts264/e107/e107_images/splash.jpg' style='width: 412px; height: 275px' alt='' /></div><br />
